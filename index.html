@@ -58,7 +58,7 @@
 
     // Match /Redirect/code or /home
     const match = path.match(/^\/Redirect\/([^\/]+)/);
-    const isHome = path.endsWith('/home') || path === '/home' || path === '/home/';
+    const isHome = path.endsWith('Redirect/home') || path === 'Redirect/home' || path === 'Redirect/home/';
 
     if (match) {
       const code = match[1];
